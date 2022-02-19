@@ -1,0 +1,57 @@
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+  text-align: left;
+  font-family: "Google Sans,arial,sans-serif;
+}
+
+h1 {
+  margin: auto
+  font-weight: bolder;
+  padding-top: 20px;
+}
+
+.float-left{
+  color: #fff;
+  font-family: "
+      Google Sans,
+    arial, sans-serif;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+body {
+  background-image: url(https://www.wallpapertip.com/wmimgs/25-252076_background-image-for-weather-app.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: block;
+}
+
+table { color:white;
+  font-family: "
+      Google Sans,
+    arial, sans-serif;
+  text-align: center;
+  border-color: aqua;
+  padding: 20px;
+  border-style: dotted;
+  border-width: 10px;
+  font-size: 20px;
+  border-collapse: separate;
+  border-spacing: 45px 15px;
+  cell-spacing: 30px;
+}
+
+header {
+  background-image: image(Images/Weather_Monochromatic.png) 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;}
+
