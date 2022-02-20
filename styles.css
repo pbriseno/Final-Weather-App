@@ -8,23 +8,21 @@ h4 {
 }
 
 h1 {
-  margin: auto
+  margin: auto;
   font-weight: bolder;
   padding-top: 20px;
 }
 
 .float-left{
   color: #fff;
-  font-family: "
-      Google Sans,
-    arial, sans-serif;
+  font-family: "Google Sans,arial, sans-serif";
   font-weight: bolder;
   margin-bottom: 20px;
   font-size: 25px;
 }
 
 body {
-  background-image: url(https://www.wallpapertip.com/wmimgs/25-252076_background-image-for-weather-app.jpg);
+  background-image: url("https://www.wallpapertip.com/wmimgs/25-252076_background-image-for-weather-app.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -33,9 +31,7 @@ body {
 }
 
 table { color:white;
-  font-family: "
-      Google Sans,
-    arial, sans-serif;
+  font-family: "Google Sans,arial, sans-serif";
   text-align: center;
   border-color: aqua;
   padding: 20px;
@@ -44,14 +40,13 @@ table { color:white;
   font-size: 20px;
   border-collapse: separate;
   border-spacing: 45px 15px;
-  cell-spacing: 30px;
 }
 
 header {
-  background-image: image(Images/Weather_Monochromatic.png) 
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    display: block;}
+    display: block;
+  }
 
