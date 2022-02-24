@@ -11,6 +11,8 @@
   </head>
   
   <body>
+    <div class ="container">
+      <div class ="Weather-app">
      <form id="search-form">
         <input type ="text"
         placeholder="Search For a City"
@@ -25,18 +27,26 @@
       <br>
         
     <h1 id="location">Rome</h1>
-
     <h2 id="date"></h2>
-    
     <h3 id="weather">Mainly sunny</h3>
     <h4>Current Weather</h4>
-    <div class="float-left">
-        <span class="temperature" id="temperature">20</span>
-<p>
-<br>
- Weather forecast for the next days
-</p>
-  
+    <div class ="row">
+    <div class="col-6">
+       <br>
+      <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Mainly sunny">
+        <span class="temperature" id="temperature">20 °C | °F</span>
+        </div>
+        <div class="col-6">
+        <ul>
+          <li>Humidity: <span id="humidity"></span></li>
+          <li>Wind: 2 km/h</li>
+        </ul>
+        </div>
+        </div>
+
+         Weather forecast for the next days
+  </div>
+<div class="Weather-app-table">
   <table>
       <colgroup span="4" class="columns"></colgroup>
       <tr>
@@ -70,10 +80,12 @@
         <td>🌞</td>
       </tr>
     </table>
+    </div>
+      GitHub Repository <a href = "https://github.com/pbriseno/Final-Weather-App">here</a> 
 <br>
 <br>
-
-GitHub Repository <a href = "https://github.com/pbriseno/Final-Weather-App">here</a> 
     <script src="index.js"></script>
+  </div>
+  </div>
   </body>
 </html>
