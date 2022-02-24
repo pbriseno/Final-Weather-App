@@ -1,22 +1,16 @@
-h1,
-h2,
-h3,
-h4 {
-  color: #fff;
-  text-align: left;
-  font-family: "Google Sans,arial,sans-serif;
-}
-
 h1 {
   margin: auto;
   font-weight: bolder;
   padding-top: 20px;
 }
 
-.float-left{
+h3 {
+  text-transform: capitalize;
+}
+.col-6 {
   color: #fff;
-  font-family: "Google Sans,arial, sans-serif";
-  font-weight: bolder;
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+  font-size: 12px;
   margin-bottom: 20px;
   font-size: 25px;
 }
@@ -28,9 +22,14 @@ body {
   background-attachment: fixed;
   background-size: cover;
   display: block;
+  font-family: Google Sans, arial, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
 }
 
-table { color:white;
+.Weather-app-table {
+  color: white;
   font-family: "Google Sans,arial, sans-serif";
   text-align: center;
   border-color: aqua;
@@ -40,13 +39,15 @@ table { color:white;
   font-size: 20px;
   border-collapse: separate;
   border-spacing: 45px 15px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-header {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    display: block;
-  }
+.Weather-app {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
+li {
+  list-style: none;
+}
