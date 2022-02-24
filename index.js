@@ -46,8 +46,8 @@ function addZero(min) {
 
 let currentMinute = addZero(currentDate.getMinutes());
 
-let h3 = document.querySelector("h3");
-h3.innerHTML = `${currentDay} ${currentDt} ${currentMonth} ${currentYear} ${currentHour}:${currentMinute}`;
+let h2 = document.querySelector("h2");
+h2.innerHTML = `${currentDay} ${currentDt} ${currentMonth} ${currentYear} ${currentHour}:${currentMinute}`;
 
 //Function to prevent default behavior
 function preDefault(event) {
@@ -89,8 +89,17 @@ function displayWeatherCondition(response) {
   head.innerHTML = `${temperature}°C`;
   document.querySelector("#weather").innerHTML =
     response.data.weather[0].description;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 
-  //console.log(response);
+  iconElement.setAttribute("alt", `response.data.weather[0].description`);
 }
 
 /*function showTemperature(response) {
@@ -105,3 +114,13 @@ button.addEventListener("click", getCurrentLocation);
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = ($temperature * 9) / 5 + 32;
+  let temperatureFahrenheit = document.querySelector("#temperature");
+  let temperatureFahrenheiticonElement = math.round(fahrenheitTemperature);
+}
+
+let fahrenheitLink = document.querySelector("#farenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
