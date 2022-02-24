@@ -14,15 +14,14 @@
     <div class ="container">
       <div class ="Weather-app">
      <form id="search-form">
-        <input type ="text"
+     <input type ="search"
         placeholder="Search For a City"
         autocomplete="off"
         autofocus="on"
-        id="search-text-input"/> </input>
+       id="search-text-input"/></input>
   
-      
-      <button type="submit" class="btn btn-light" id="search">Search</button>
-      <button type="current" class="btn btn-light" id="current">Current</button>
+      <button type="submit" class="btn btn-light btn-sm" id="search">Search</button>
+      <button type="current" class="btn btn-light btn-sm" id="current">Current</button>
         
       <br>
         
@@ -33,13 +32,17 @@
     <div class ="row">
     <div class="col-6">
        <br>
-      <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Mainly sunny">
-        <span class="temperature" id="temperature">20 °C | °F</span>
+      <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Mainly sunny" id="icon">
+      
+        <span class="temperature" id="temperature">20° </span>
+        <span class="units"> °C | <a href="#" id="fahrenheit-link">°F</a></span>
         </div>
         <div class="col-6">
         <ul>
-          <li>Humidity: <span id="humidity"></span></li>
-          <li>Wind: 2 km/h</li>
+          <br>
+          <li>Humidity: <span id="humidity"></span> %
+          </li>
+          <li>Wind: <span id="wind"></span> km/h</li>
         </ul>
         </div>
         </div>
