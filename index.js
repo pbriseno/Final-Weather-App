@@ -100,14 +100,9 @@ function displayWeatherCondition(response) {
   );
 
   iconElement.setAttribute("alt", `response.data.weather[0].description`);
-}
 
-/*function showTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let head = document.querySelector("#temperature");
-  head.innerHTML = `${temperature}°C`;
-  console.log(temperature);
-}*/
+  celsiusTemperature = response.data.main.temp;
+}
 
 let button = document.querySelector("#current");
 button.addEventListener("click", getCurrentLocation);
@@ -117,10 +112,20 @@ searchForm.addEventListener("submit", handleSubmit);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let fahrenheitTemperature = ($temperature * 9) / 5 + 32;
-  let temperatureFahrenheit = document.querySelector("#temperature");
-  let temperatureFahrenheiticonElement = math.round(fahrenheitTemperature);
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = math.round(fahrenheitTemperature);
 }
 
-let fahrenheitLink = document.querySelector("#farenheit-link");
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = math.round(celsiusTemperature);
+}
+let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
