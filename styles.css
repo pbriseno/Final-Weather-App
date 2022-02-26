@@ -30,7 +30,7 @@ body {
 
 .Weather-app-table {
   color: white;
-  font-family: "Google Sans,arial, sans-serif";
+  font-family: Google Sans, arial, sans-serif;
   text-align: center;
   border-color: aqua;
   padding: 20px;
